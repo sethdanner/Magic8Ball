@@ -40,12 +40,17 @@ class EightBallViewController: UIViewController {
     func animate(imageView: UIImageView, images: [UIImage]) {
         
         imageView.animationImages = images
-        imageView.animationDuration = 1.0
+        imageView.animationDuration = 0.75
         imageView.animationRepeatCount = 3
         imageView.startAnimating()
     }
     
     @IBAction func ballButtonTapped(_ sender: UIButton) {
+        
+        animate(imageView: ballImageView, images: ballImages)
+    }
+    
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         
         animate(imageView: ballImageView, images: ballImages)
     }

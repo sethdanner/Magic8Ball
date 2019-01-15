@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOD-CJ-UsU">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="vOD-CJ-UsU" customClass="EightBallViewController" customModule="Magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vYv-WG-l8V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MEB-0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kn5-QC-lVE">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MEB-0" translatesAutoresizingMaskIntoConstraints="NO" id="Kn5-QC-lVE">
+                                <rect key="frame" x="0.0" y="161" width="414" height="414"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Kn5-QC-lVE" secondAttribute="height" multiplier="1:1" id="9Ay-ws-vTL"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toS-xB-Lbu">
-                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="161" width="414" height="414"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="toS-xB-Lbu" secondAttribute="height" multiplier="1:1" id="7Cz-1z-kvH"/>
                                 </constraints>
@@ -33,10 +33,22 @@
                                     <action selector="ballButtonTapped:" destination="vOD-CJ-UsU" eventType="touchUpInside" id="BaY-sv-Dnx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj9-RL-gHV">
+                                <rect key="frame" x="174" y="340" width="66" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="5JY-Or-2zQ"/>
+                                    <constraint firstAttribute="height" constant="56" id="gsP-le-HAY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="toS-xB-Lbu" firstAttribute="centerY" secondItem="vYv-WG-l8V" secondAttribute="centerY" id="157-3B-vZg"/>
+                            <constraint firstItem="bj9-RL-gHV" firstAttribute="centerY" secondItem="vYv-WG-l8V" secondAttribute="centerY" id="Aa8-ur-Z0Q"/>
+                            <constraint firstItem="bj9-RL-gHV" firstAttribute="centerX" secondItem="vYv-WG-l8V" secondAttribute="centerX" id="Q1b-Tc-epF"/>
                             <constraint firstItem="toS-xB-Lbu" firstAttribute="leading" secondItem="25h-Dy-5qL" secondAttribute="leading" id="RsT-Kq-srW"/>
                             <constraint firstItem="Kn5-QC-lVE" firstAttribute="leading" secondItem="25h-Dy-5qL" secondAttribute="leading" id="cc1-qQ-ZDr"/>
                             <constraint firstItem="toS-xB-Lbu" firstAttribute="trailing" secondItem="25h-Dy-5qL" secondAttribute="trailing" id="fNR-sg-fD5"/>
@@ -57,6 +69,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MEB-0.png" width="4167" height="4167"/>
+        <image name="MEB-0" width="4167" height="4167"/>
     </resources>
 </document>
