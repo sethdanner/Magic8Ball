@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="isB-Ke-n73">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOD-CJ-UsU">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,19 +11,52 @@
     </dependencies>
     <scenes>
         <!--Eight Ball View Controller-->
-        <scene sceneID="Be9-xm-1Lc">
+        <scene sceneID="8re-mw-kvb">
             <objects>
-                <viewController id="isB-Ke-n73" customClass="EightBallViewController" customModule="Magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AaQ-rO-L8l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="vOD-CJ-UsU" customClass="EightBallViewController" customModule="Magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYv-WG-l8V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MEB-0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kn5-QC-lVE">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kn5-QC-lVE" secondAttribute="height" multiplier="1:1" id="9Ay-ws-vTL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toS-xB-Lbu">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="toS-xB-Lbu" secondAttribute="height" multiplier="1:1" id="7Cz-1z-kvH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="ballButtonTapped:" destination="vOD-CJ-UsU" eventType="touchUpInside" id="BaY-sv-Dnx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Yfn-Ef-0hB"/>
+                        <constraints>
+                            <constraint firstItem="toS-xB-Lbu" firstAttribute="centerY" secondItem="vYv-WG-l8V" secondAttribute="centerY" id="157-3B-vZg"/>
+                            <constraint firstItem="toS-xB-Lbu" firstAttribute="leading" secondItem="25h-Dy-5qL" secondAttribute="leading" id="RsT-Kq-srW"/>
+                            <constraint firstItem="Kn5-QC-lVE" firstAttribute="leading" secondItem="25h-Dy-5qL" secondAttribute="leading" id="cc1-qQ-ZDr"/>
+                            <constraint firstItem="toS-xB-Lbu" firstAttribute="trailing" secondItem="25h-Dy-5qL" secondAttribute="trailing" id="fNR-sg-fD5"/>
+                            <constraint firstItem="Kn5-QC-lVE" firstAttribute="trailing" secondItem="25h-Dy-5qL" secondAttribute="trailing" id="hzy-Sg-6Wb"/>
+                            <constraint firstItem="Kn5-QC-lVE" firstAttribute="centerX" secondItem="vYv-WG-l8V" secondAttribute="centerX" id="lGM-5u-76Y"/>
+                            <constraint firstItem="toS-xB-Lbu" firstAttribute="centerX" secondItem="vYv-WG-l8V" secondAttribute="centerX" id="mGb-i7-lDK"/>
+                            <constraint firstItem="Kn5-QC-lVE" firstAttribute="centerY" secondItem="vYv-WG-l8V" secondAttribute="centerY" id="sQf-ED-DeH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="25h-Dy-5qL"/>
                     </view>
+                    <connections>
+                        <outlet property="ballImageView" destination="Kn5-QC-lVE" id="hyP-kd-1vs"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8T-Ma-zdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQo-qf-UPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="170.46476761619192"/>
+            <point key="canvasLocation" x="85.507246376811594" y="7.3660714285714279"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MEB-0.png" width="4167" height="4167"/>
+    </resources>
 </document>

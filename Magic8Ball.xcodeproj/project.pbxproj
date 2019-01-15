@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6007EDE121EE826C0065FEE3 /* MBImages in Resources */ = {isa = PBXBuildFile; fileRef = 6007EDE021EE826C0065FEE3 /* MBImages */; };
 		604BBADF21556BF50009F7C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604BBADE21556BF50009F7C0 /* AppDelegate.swift */; };
 		604BBAE421556BF50009F7C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604BBAE221556BF50009F7C0 /* Main.storyboard */; };
 		604BBAE621556BF70009F7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604BBAE521556BF70009F7C0 /* Assets.xcassets */; };
 		604BBAE921556BF70009F7C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604BBAE721556BF70009F7C0 /* LaunchScreen.storyboard */; };
 		604BBAF521557A2B0009F7C0 /* EightBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604BBAF421557A2B0009F7C0 /* EightBallViewController.swift */; };
-		60B04EAB21DED10100CC9A94 /* MEB-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B04EAA21DED10100CC9A94 /* MEB-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6007EDE021EE826C0065FEE3 /* MBImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MBImages; path = ../../../../../MBImages; sourceTree = "<group>"; };
 		604BBADB21556BF50009F7C0 /* Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604BBADE21556BF50009F7C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		604BBAE321556BF50009F7C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,7 +22,6 @@
 		604BBAE821556BF70009F7C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604BBAEA21556BF70009F7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604BBAF421557A2B0009F7C0 /* EightBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightBallViewController.swift; sourceTree = "<group>"; };
-		60B04EAA21DED10100CC9A94 /* MEB-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEB-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +66,6 @@
 			children = (
 				604BBADE21556BF50009F7C0 /* AppDelegate.swift */,
 				604BBAE521556BF70009F7C0 /* Assets.xcassets */,
-				6007EDE021EE826C0065FEE3 /* MBImages */,
-				60B04EAA21DED10100CC9A94 /* MEB-1.png */,
 				604BBAEA21556BF70009F7C0 /* Info.plist */,
 			);
 			path = Resources;
@@ -146,9 +140,7 @@
 			files = (
 				604BBAE921556BF70009F7C0 /* LaunchScreen.storyboard in Resources */,
 				604BBAE621556BF70009F7C0 /* Assets.xcassets in Resources */,
-				60B04EAB21DED10100CC9A94 /* MEB-1.png in Resources */,
 				604BBAE421556BF50009F7C0 /* Main.storyboard in Resources */,
-				6007EDE121EE826C0065FEE3 /* MBImages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
